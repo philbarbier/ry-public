@@ -1,0 +1,13 @@
+.menu_link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #313131;
+    padding-left: 30px;
+}
+
+.menu_link a {
+    text-decoration: none;
+}
+
+.menu_link a:hover {
+}

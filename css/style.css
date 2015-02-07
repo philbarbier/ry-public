@@ -1,0 +1,49 @@
+.menu_container {
+    margin-left: 323px;;
+    margin-top: 10px;
+}
+
+.menu_link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #313131;
+    padding-left: 30px;
+}
+
+.menu_link a {
+    text-decoration: none;
+}
+
+.menu_link a:hover {
+    color: #313131;
+}
+
+.active {
+    text-decoration: underline;
+    color: #ff1300;
+}
+
+.top_menu {
+    position: absolute;
+    top: 88px;
+}
+
+.how_to_enter {
+    position: absolute;
+    left: 737px;
+}
+
+.login_to_vote {
+    position: absolute;
+    left: 897px;
+    top: 1px;
+}
+
+.sub_header {
+    background-image: url('/images/sub_header_text.jpg');
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 29px;
+    margin-top: 28px;
+    margin-left: 188px;
+}
