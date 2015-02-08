@@ -4,6 +4,9 @@ $route['default_controller'] = "home";
 $route['404_override'] = '';
 
 $route['how-to-enter'] = "home/howtoenter";
+$route['about'] = "home/about";
+$route['make']  = "home/make";
+$route['rules'] = "home/rules";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

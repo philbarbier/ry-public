@@ -13,26 +13,44 @@ class Submission extends CI_Model
         parent::__construct();
     }
 
-    public function add_submission($data = []) {
-        $this->firstname = $data['firstname'];
-        $this->lastname = $data['lastname'];
-        $this->school = $data['school'];
-        $this->biotext = $data['biotext'];
-        $this->email = $data['email'];
+    public function get_submissions($offset = 0, $limit = 16) {
+        $query = $this->db->get('submissions', $limit, $offset);
+        $results = [];
+        foreach ($query->result() as $row) {
+            $results[$row->id] = $row;
+            $query2 = $this->db->get_where('submission_files', array('submission_id' => $row->id));
+            $files = [];
+            foreach ($query2->result() as $row2) {
+                // $row2->filename = 'submission_thumb_placeholder.jpg';
+                $row2->fullpath = 'http://ry-admin.seepies.net/uploads/' . $row2->filename;
+                $files[] = $row2;
+            }
+            $results[$row->id]->files = $files;
 
-        $res = $this->db->insert('submissions', $this);
-        if (!$res) {
-            return false;
+            $results[$row->id]->votes = $this->get_submission_votes($row->id);
         }
-        $submission_id = $this->db->insert_id();
-        //
-        $data['submission_id']  = $submission_id;
-        $data['filename']       = $data['file']['file_name'];
-        $this->load->model('submissionfile', 'sf');
-        $res = $this->sf->addfile($data); 
-        if (!$res) {
-            return false;
+        // fake it, for now
+        for ($i=0; $i < 19; $i++) {
+            //$results[$i+1] = $results[12];
         }
-        return true;
+        return $results;
+    }
+
+    public function get_submission($id = false) {
+        $query = $this->db->get_where('submissions', array('id' => $id));
+        $data = $query->row();
+        $query = $this->db->get_where('submission_files', array('submission_id' => $id));
+        foreach ($query->result() as $row) {
+            $data->files[] = $row;
+        }
+        $data->votes = $this->get_submission_votes($id);
+
+        return $data;
+    }
+
+    private function get_submission_votes($submission_id = false) {
+        if (!$submission_id) return 0;
+        $query = $this->db->get_where('submission_votes', array('submission_id' => $submission_id));
+        return $query->num_rows();
     }
 }
