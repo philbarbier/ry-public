@@ -1,3 +1,7 @@
+.ryhidden {
+    display: none;
+}
+
 .menu_container {
     margin-left: 323px;;
     margin-top: 10px;
@@ -37,6 +41,7 @@
     position: absolute;
     left: 897px;
     top: 1px;
+    cursor: pointer;
 }
 
 .sub_header {
@@ -46,4 +51,121 @@
     height: 29px;
     margin-top: 28px;
     margin-left: 188px;
+}
+
+.page_container {
+    padding-left: 186px;
+}
+
+.submissions_container {
+    width: 980px;
+    margin-top: 5px;
+}
+
+.submission_container {
+    cursor: pointer;
+    width: 234px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.submission_thumbnail img {
+    width: 234px;
+    height: 234px;
+}
+
+.submission_overlay {
+    position: absolute;
+    top: 0px;
+    z-index: 999999;
+    padding: 5px;
+    background-color: #ffffff;
+    opacity: 0.4;
+    width: 100%;
+    filter: alpha(opacity=40);
+}
+
+.submission_vote_container {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 210px;
+    margin-left: 5px;
+}
+
+.submission_vote_container span {
+    position: absolute;
+    top: -3px;
+    left: 18px;
+}
+
+.pagination_container {
+
+}
+
+.modal_container {
+    position: absolute;
+    z-index: 999999;
+    left: 275px;
+}
+
+.modal_close_button_container {
+    cursor: pointer;
+    position: absolute;
+    top: -22px;
+    left: 775px;
+}
+
+.modal_background {
+    width: 797px;
+    height: 770px;
+    background-image: url('/images/modal_background.png');
+    background-repeat: no-repeat;
+}
+
+.modal_image_container {
+    padding: 25px;
+}
+
+.modal_image_container img {
+    width: 740px;
+    height: 539px;
+}
+
+.modal_text_container {
+
+}
+
+.modal_submission_title {
+
+}
+
+.modal_submission_artist {
+
+}
+
+.modal_submission_text {
+
+}
+
+.modal_vote_button {
+
+}
+
+.login_modal_container {
+    position: absolute;
+    z-index: 999999;
+    width: 454px;
+    height: 598px;
+    background-image: url('/images/login_modal_background.png');
+    background-repeat: no-repeat;
+    left: 440px;
+    top: 240px;
+}
+
+.login_modal_header {
+
 }
