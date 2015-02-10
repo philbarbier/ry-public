@@ -1,4 +1,3 @@
-
             <div class="submissions_container">
                 <?php foreach ($submissions as $submission) { ?>
                     <div class="submission_container" data-id="<?php echo $submission->id; ?>">
@@ -31,10 +30,12 @@
                         </div>
                         <div class="modal_submission_artist">
                         </div>
+                        <br />
                         <div class="modal_submission_text">
                         </div>
                     </div>
                     <div class="modal_vote_button ryhidden">
+                        <img src="/images/modal_vote_button.jpg" alt="Vote" border="0" />
                     </div>
                 </div>
             </div>

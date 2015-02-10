@@ -11,7 +11,6 @@
         <div class="menu_container">
             <a class="menu_link <?php echo $nav['dactive'] ? 'active' : ''; ?>" href="/">Designs</a>
             <a class="menu_link <?php echo $nav['aactive'] ? 'active' : ''; ?>" href="/about">About the Competition</a>
-            <a class="menu_link <?php echo $nav['mactive'] ? 'active' : ''; ?>" href="/make">Make a Design</a>
             <a class="menu_link <?php echo $nav['ractive'] ? 'active' : ''; ?>" href="/rules">Rules &amp; Regulations</a>
         </div>
         <div class="sub_header">

@@ -21,17 +21,12 @@ class Submission extends CI_Model
             $query2 = $this->db->get_where('submission_files', array('submission_id' => $row->id));
             $files = [];
             foreach ($query2->result() as $row2) {
-                // $row2->filename = 'submission_thumb_placeholder.jpg';
                 $row2->fullpath = 'http://ry-admin.seepies.net/uploads/' . $row2->filename;
                 $files[] = $row2;
             }
             $results[$row->id]->files = $files;
 
             $results[$row->id]->votes = $this->get_submission_votes($row->id);
-        }
-        // fake it, for now
-        for ($i=0; $i < 19; $i++) {
-            //$results[$i+1] = $results[12];
         }
         return $results;
     }

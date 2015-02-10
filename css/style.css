@@ -3,7 +3,7 @@
 }
 
 .menu_container {
-    margin-left: 323px;;
+    margin-left: 390px;;
     margin-top: 10px;
 }
 
@@ -136,11 +136,15 @@
 }
 
 .modal_text_container {
-
+    margin-left: 25px;
+    font-family: arial,helvetica;
+    width: 575px;
+    float: left;
 }
 
 .modal_submission_title {
-
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .modal_submission_artist {
@@ -152,7 +156,10 @@
 }
 
 .modal_vote_button {
-
+    float: right;
+    margin-right: 31px;
+    position: relative;
+    top: 13%;
 }
 
 .login_modal_container {
@@ -168,4 +175,28 @@
 
 .login_modal_header {
 
+}
+
+.login_modal_content {
+    font-family: Arial,helvetica;
+    text-align: center;
+    font-weight: normal;
+    font-size: 10px;
+    width: 300px;
+    margin-left: 83px;
+    margin-top: 10px;
+}
+
+.login_modal_optins {
+    text-align: left;
+    width: 340px; 
+}
+
+.login_modal_button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.fb_login_container {
+    margin-top: 20px;
 }

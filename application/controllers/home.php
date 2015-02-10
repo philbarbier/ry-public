@@ -16,7 +16,6 @@ class Home extends MY_Controller {
     public function index() {
         $this->load->model('submission', 'submission', true);
         $this->data['submissions'] = $this->submission->get_submissions();
-        //var_dump($this->data); die;
         $this->data['nav']['dactive'] = true;
         $this->_load_view('homepage', $this->data);
     }
@@ -38,5 +37,21 @@ class Home extends MY_Controller {
     public function rules() {
         $this->data['nav']['ractive'] = true;
         $this->_load_view('rules', $this->data);
+    }
+
+    public function addvoter() {
+        $this->load->model('voter');
+        $id = $this->voter->savevoter($this->input->post());
+        header('Content-Type: application/json');
+        echo json_encode(array('voter_id' => $id));
+        die;
+    }
+
+    public function vote() {
+        $this->load->model('Submission_vote');
+        $result = $this->Submission_vote->vote($this->input->post());
+        header('Content-Type: application/json');
+        echo json_decode(array('error' => $result));
+        die;
     }
 }
