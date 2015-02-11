@@ -35,9 +35,13 @@ $(document).ready(function() {
             }
         }).done(function(data) {
             if (!data.error) {
-                $('model_vote_button').hide();
+                $('.model_vote_button').hide();
                 $.removeCookie('ryvoter');
                 alert('Thank you for your vote!');
+            } else {
+                $('.modal_vote_button').hide();
+                $.removeCookie('ryvoter');
+                alert('You have already voted');
             }
         });
        

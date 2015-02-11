@@ -15,7 +15,12 @@ class Voter extends CI_Model
     }
 
     public function savevoter($data = []) {
-        //
+        // check if exists
+        $result = $this->db->query("select id from voters where email='" . $data['email'] . "'");
+        if ($result->num_rows() > 0) {
+            $row = $result->row();
+            return $row->id;
+        }
         $this->firstname        = $data['firstname'];
         $this->lastname         = $data['lastname'];
         $this->ip_address       = $this->input->ip_address();

@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .ryhidden {
     display: none;
 }
@@ -54,7 +58,8 @@
 }
 
 .page_container {
-    padding-left: 186px;
+    margin-left: 190px;
+    width: 980px;
 }
 
 .submissions_container {
@@ -73,7 +78,6 @@
 
 .submission_thumbnail img {
     width: 234px;
-    height: 234px;
 }
 
 .submission_overlay {
@@ -110,6 +114,7 @@
     position: absolute;
     z-index: 999999;
     left: 275px;
+    top: 26px;
 }
 
 .modal_close_button_container {
@@ -128,6 +133,7 @@
 
 .modal_image_container {
     padding: 25px;
+    width: 740px;
 }
 
 .modal_image_container img {
@@ -160,6 +166,7 @@
     margin-right: 31px;
     position: relative;
     top: 13%;
+    cursor: pointer;
 }
 
 .login_modal_container {

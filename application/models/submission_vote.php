@@ -8,6 +8,10 @@ class Submission_vote extends CI_Model
     public function vote($data = []) {
         $this->submission_id    = $data['submission_id'];
         $this->voter_id         = $data['voter_id'];
-        return $this->db->insert('submission_votes', $this);
+        try {
+            return $this->db->insert('submission_votes', $this);
+        } catch (Exception $e) {
+            return false; 
+        }
     }
 }

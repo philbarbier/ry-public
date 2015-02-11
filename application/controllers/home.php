@@ -51,7 +51,7 @@ class Home extends MY_Controller {
         $this->load->model('Submission_vote');
         $result = $this->Submission_vote->vote($this->input->post());
         header('Content-Type: application/json');
-        echo json_decode(array('error' => $result));
+        echo json_encode(array('error' => !$result));
         die;
     }
 }
