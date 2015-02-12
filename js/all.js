@@ -1,11 +1,8 @@
 var loggedin, fbdata, id = false;
 
 $(document).ready(function() {
-    console.log($.cookie('ryvoter'));
     $('.submission_container').click(function(e) {
         id = $(this).data('id');
-        console.log('viewing ' + id);
-        console.log(submissions[id]);
         $('.modal_image_container img').attr('src', submissions[id].files[0].fullpath); 
         $('.modal_submission_title').text(submissions[id].title);
         $('.modal_submission_artist').text(submissions[id].firstname + ' ' + submissions[id].lastname + ' - ' + submissions[id].school);
@@ -124,7 +121,6 @@ function checkLoginState() {
                 $('.login_modal_fields').hide();
                 loggedin = true;
                 FB.api('/me', function(data) {
-                    console.log(data);
                     fbdata = data;
                 });
             } else {

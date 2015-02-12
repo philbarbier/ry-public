@@ -9,6 +9,7 @@ $route['make']          = "home/make";
 $route['rules']         = "home/rules";
 $route['add-voter']     = "home/addvoter";
 $route['vote']          = "home/vote";
+$route['terms']         = "home/terms";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

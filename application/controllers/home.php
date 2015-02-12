@@ -15,8 +15,11 @@ class Home extends MY_Controller {
     
     public function index() {
         $this->load->model('submission', 'submission', true);
-        $this->data['submissions'] = $this->submission->get_submissions();
+        $currpage = is_numeric($this->input->get('p')) ? $this->input->get('p') : 1;
+        $this->data['submissions'] = $this->submission->get_submissions($currpage);
         $this->data['nav']['dactive'] = true;
+        $this->data['nav']['total'] = $this->submission->get_submission_total();
+        $this->data['nav']['currpage'] = $currpage;
         $this->_load_view('homepage', $this->data);
     }
 

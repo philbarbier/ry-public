@@ -1,4 +1,10 @@
         </div>
+        <div class="footer_links_container">
+            <a href="/rules">Rules &amp; Regulations</a>
+            <a href="/terms">Terms &amp; Conditions</a>
+            <a href="http://ryvita.com/en-ca/" target="_blank">Visit Ryvita.com</a>
+            <a href="https://www.facebook.com/ryvitacanada" target="_blank">Visit Ryvita on Facebook</a>
+        </div>
         <div class="login_modal_container ryhidden">
             <div class="login_modal_header">
                 <img src="/images/login_modal_header.png" alt="Login" border="0" />
