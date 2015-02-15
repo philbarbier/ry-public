@@ -18,7 +18,8 @@ class Home extends MY_Controller {
         $currpage = is_numeric($this->input->get('p')) ? $this->input->get('p') : 1;
         $this->data['submissions'] = $this->submission->get_submissions($currpage);
         $this->data['nav']['dactive'] = true;
-        $this->data['nav']['total'] = $this->submission->get_submission_total();
+        $total = $this->submission->get_submission_total();
+        $this->data['nav']['totalpages'] = ceil($total / 16);
         $this->data['nav']['currpage'] = $currpage;
         $this->_load_view('homepage', $this->data);
     }

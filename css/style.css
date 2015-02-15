@@ -2,6 +2,18 @@ body {
     margin: 0px;
 }
 
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 .ryhidden {
     display: none;
 }
@@ -114,7 +126,7 @@ body {
 }
 
 .pagination_container {
-
+    margin-left: 40%;
 }
 
 .modal_container {
@@ -219,15 +231,67 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    padding-left: 190px;
+    padding-right: 160px;
+    background-color: #ff1300;
 }
 
 .footer_links_container a {
     text-decoration: none;    
-    color: #313131;
+    color: #ffffff;
+    padding-right: 30px;
 }
 
 .footer_links_container a:hover {
-    color: #313131;
+    color: #ffffff;
     text-decoration: underline;
+}
+
+.footer_links {
+
+    
+}
+
+.footer_copyright {
+    color: #ffffff;
+    text-transform: none;
+    font-weight: normal;
+    text-align: left;
+}
+.navhelper {
+    position: relative;
+    top: 1px;
+    left: 7px;
+}
+
+.pagenumber {
+    background-image: url("/images/pagination_number_border.jpg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    float: left;
+    margin-left: 10px;
+}
+
+.pagenumber a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7a7a7a;
+
+}
+
+.pagenumber a:hover {
+    text-decoration: none;
+}
+.prevpage {
+    float: left;
+}
+
+.nextpage {
+    float: left;
+    padding-left: 10px
+
 }

@@ -15,7 +15,41 @@
                     </div>
                 <?php } ?>
             </div>
+            <div class="clear"></div>
             <div class="pagination_container">
+            <?php
+                $cp = $nav['currpage'];
+                $t = $nav['totalpages'];
+                $l = 2;
+                $ps = ($cp - $l) < 1 ? 1 : $cp - $l;
+
+                if ($cp > 1) {
+                    echo '<div class="prevpage"><a href="/?p=' . ($cp-1) . '"><img src="/images/pagination_arrow_left.jpg" border="0" alt="Previous"></a></div>';
+                }
+
+                for ($i=$ps; $i <= $ps+1; $i++) {
+                    //echo '<br />' . $i . ' -- ' . $ps . ' -- ' . $cp . '<br />';
+                    if ($i < 1 - $l) break;
+                    if ($i < $cp - $l) break;
+                    if ($i != $cp) {
+                        echo '<div class="pagenumber"><span class="navhelper"><a href="/?p=' . $i . '">' . $i . '</a></span></div>';
+                    } else {
+                        break;
+                    }
+                }
+                for ($i=$cp; $i <= $t; $i++) {
+                    if ($i > $t) break;
+                    if ($i > $cp + $l) break;
+                    if ($i == $cp) {
+                        echo '<div class="pagenumber"><span class="navhelper">' . $i . '</span></div>';
+                    } else {
+                        echo '<div class="pagenumber"><span class="navhelper"><a href="/?p=' . $i . '">' . $i . '</a></span></div>';
+                    }
+                }
+                if ($cp < $t) {
+                    echo '<div class="nextpage"><a href="/?p=' . ($cp+1) . '"><img src="/images/pagination_arrow_right.jpg" border="0" alt="Next"></a></div>';
+                }
+            ?>
             </div>
             <div class="modal_container ryhidden">
                 <div class="modal_close_button_container">

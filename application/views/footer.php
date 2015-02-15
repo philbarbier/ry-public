@@ -1,9 +1,17 @@
         </div>
         <div class="footer_links_container">
-            <a href="/rules">Rules &amp; Regulations</a>
-            <a href="/terms">Terms &amp; Conditions</a>
-            <a href="http://ryvita.com/en-ca/" target="_blank">Visit Ryvita.com</a>
-            <a href="https://www.facebook.com/ryvitacanada" target="_blank">Visit Ryvita on Facebook</a>
+            <div class="footer_links left">
+                <a href="/rules">Rules &amp; Regulations</a>
+                <a href="/terms">Terms &amp; Conditions</a>
+                <a href="http://ryvita.com/en-ca/" target="_blank">Ryvita.com/en-ca</a>
+            </div>
+            <div class="footer_links right">
+                <a style="text-transform: none;" href="https://www.facebook.com/ryvitacanada" target="_blank">Facebook</a>
+            </div>
+            <div class="clear"></div>
+            <div class="footer_copyright">
+                The Jordans &amp; Ryvita Company, a division of ABF Grain Products &copy; 2015 RYVITA&copy; 
+            </div>
         </div>
         <div class="login_modal_container ryhidden">
             <div class="login_modal_header">
