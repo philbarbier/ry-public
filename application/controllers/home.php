@@ -43,6 +43,10 @@ class Home extends MY_Controller {
         $this->_load_view('rules', $this->data);
     }
 
+    public function terms() {
+        $this->_load_view('terms', $this->data);
+    }
+
     public function addvoter() {
         $this->load->model('voter');
         $id = $this->voter->savevoter($this->input->post());
