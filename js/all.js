@@ -10,10 +10,13 @@ $(document).ready(function() {
         if ($.cookie('ryvoter')) {
             $('.modal_vote_button').show();
         }
+        window.scrollTo(0,0);
+        $('.modal_shadow').show();
         $('.modal_container').show();
     });
 
     $('.modal_close_button_container').click(function(e) {
+        $('.modal_shadow').hide();
         $('.modal_container').hide();
         $('.modal_image_container img').attr('src','');
         $('.modal_submission_title').text('');

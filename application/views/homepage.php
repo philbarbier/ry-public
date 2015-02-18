@@ -5,8 +5,10 @@
                             <img src="<?php echo $submission->files[0]->fullpath; ?>" alt="<?php echo $submission->title; ?>" border="0" />
                         </div>
                         <div class="submission_overlay">
+                            <span>
                             &quot;<?php echo $submission->title; ?>&quot;<br />
                             <?php echo $submission->firstname . ' ' . $submission->lastname . ' - ' . $submission->school; ?>
+                            </span>
                         </div>
                         <div class="submission_vote_container">
                             <img src="/images/white_star_vote.png" alt="Votes" border="0" />
@@ -51,6 +53,7 @@
                 }
             ?>
             </div>
+            <div class="modal_shadow"></div>
             <div class="modal_container ryhidden">
                 <div class="modal_close_button_container">
                     <img src="/images/modal_close_button.png" alt="Close" border="0" />
