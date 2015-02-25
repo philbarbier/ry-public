@@ -5,4 +5,6 @@
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
-        <img src="/images/header.jpg" alt="header" border="0" />
+        <div class="header_container">
+            <img src="/images/header.jpg" alt="header" border="0" />
+        </div>

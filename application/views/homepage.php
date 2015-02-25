@@ -1,14 +1,14 @@
             <div class="submissions_container">
                 <?php foreach ($submissions as $submission) { ?>
                     <div class="submission_container" data-id="<?php echo $submission->id; ?>">
-                        <div class="submission_thumbnail">
-                            <img src="<?php echo $submission->files[0]->fullpath; ?>" alt="<?php echo $submission->title; ?>" border="0" />
-                        </div>
                         <div class="submission_overlay">
                             <span>
                             &quot;<?php echo $submission->title; ?>&quot;<br />
                             <?php echo $submission->firstname . ' ' . $submission->lastname . ' - ' . $submission->school; ?>
                             </span>
+                        </div>
+                        <div class="submission_thumbnail">
+                            <img src="<?php echo $submission->files[0]->fullpath; ?>" alt="<?php echo $submission->title; ?>" border="0" />
                         </div>
                         <div class="submission_vote_container">
                             <img src="/images/white_star_vote.png" alt="Votes" border="0" />
