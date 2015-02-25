@@ -13,7 +13,9 @@
             <a class="menu_link <?php echo $nav['aactive'] ? 'active' : ''; ?>" href="/about">About the Competition</a>
             <a class="menu_link <?php echo $nav['ractive'] ? 'active' : ''; ?>" href="/rules">Rules &amp; Regulations</a>
         </div>
-        <div class="sub_header">
+        <div class="sub_header header_container">
+            <img src="/images/sub_header_text.jpg" border="0" alt="Ryvita Tin Contest" />
         </div>
 
         <div class="page_container">
+            <div class="content_wrapper">

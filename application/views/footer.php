@@ -1,3 +1,4 @@
+            </div>
         </div>
         <div class="footer_links_container">
             <div class="footer_wrapper">
