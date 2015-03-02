@@ -26,7 +26,7 @@ permitted to enter or win.
 If the entrant is under the age of majority, the entrant's parent or guardian must sign and submit the Submission Form. 
 </p>
 <h3>4.WHAT IS THE ENTRY PROCEDURE?</h3>
-<p>No purchase is required.  To enter the Competition, students must send their completed Submission Form with the required materials to Ryvita Canada by March 2nd, 2015 (see address below, question # 6). 
+<p>No purchase is required.  To enter the Competition, students must send their completed Submission Form with the required materials to Ryvita Canada by March 15th, 2015 (see address below, question # 6). 
 <h3 style="text-decoration: underline;">THE SUBMISSION MATERIALS ARE:</h3>
 i. Digital images of the work of art being submitted in a PC/MAC compatible jpg or pdf file, with a resolution of 300 DPI or larger<br />
 ii. A title of the piece being submitted<br />
@@ -78,7 +78,7 @@ All decisions regarding this Competition and the selection of successful submiss
 </p>
 <h3>7. WHERE DO I SEND MY SUBMISSION MATERIALS?</h3>
 <p>
-Submission Forms with requested materials, including digital images of the work of art being submitted to the Competition, can be sent any time before or by the deadline of March 2nd, 2015 to:<br /> 
+Submission Forms with requested materials, including digital images of the work of art being submitted to the Competition, can be sent any time before or by the deadline of March 15th, 2015 to:<br /> 
 Geoff Charron<br />
 Senior Account Executive<br />
 Influence Marketing c/o The Jordan's &amp; Ryvita Company Ltd.<br />
