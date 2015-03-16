@@ -85,12 +85,14 @@ html,body {
     width: 980px;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
 }
 
 .content_wrapper {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    height: 100%;
 }
 
 .submissions_container {
@@ -161,6 +163,8 @@ html,body {
     z-index: 999999;
     left: 275px;
     top: 26px;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
 .modal_close_button_container {
@@ -172,9 +176,11 @@ html,body {
 
 .modal_background {
     width: 797px;
+    /*
     height: 770px;
     background-image: url('/images/modal_background.png');
     background-repeat: no-repeat;
+    */
 }
 
 .modal_image_container {
@@ -191,6 +197,7 @@ html,body {
     font-family: arial,helvetica;
     width: 575px;
     float: left;
+    margin-bottom: 25px;
 }
 
 .modal_submission_title {
