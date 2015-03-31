@@ -1,3 +1,10 @@
+            <div style="padding: 5px; text-align:center;">
+                <strong>
+On behalf of The Jordan's &amp; Ryvita Company Limited, thank you for your amazing submissions and for taking the time to participate in the inaugural 2015 Ryvita Canada Tin Design Invitational Student Art
+Competition.
+<br />Congratulations to Ms. Lisa Zhu for her Top It Off design as the winning submission!
+                </strong>
+            </div>
             <div class="submissions_container">
                 <?php foreach ($submissions as $submission) { ?>
                     <div class="submission_container" data-id="<?php echo $submission->id; ?>">
